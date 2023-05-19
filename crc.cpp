@@ -41,3 +41,11 @@ uint16_t Crc16(uint8_t *datain, int size) {
 
 	return crc16 ^ 0xffff;
 }
+
+//test code
+//uint8_t cmd[5] = { 0x12, 0x34, 0x56, 0x78, 0x90 };
+//uint8_t crc5 = Crc5(cmd, 36);
+//uint16_t crc16 = Crc16(cmd, 36);
+
+//std::cout << std::hex << +crc5 << std::endl;
+//std::cout << std::hex << +crc16 << std::endl;
