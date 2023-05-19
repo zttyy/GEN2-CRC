@@ -2,11 +2,17 @@
 The crc algorithm in the gen2 protocol
 
 ######---CRC16---#####
+
 The polynomial used to calculate the CRC-16, x16 + x12 + x5 + 1, is the CRC-CCITT International Standard, ITU Recommendation X.25.
+
 First:
+
   preload the entire CRC register (i.e. Q[15:0], Q15 being the MSB and Q0 the LSB) with the value FFFFh. 
+  
 Second:
+
   clock the data bits to be encoded into the input labeled DATA, MSB first. After clocking in all the data bits, Q[15:0] holds the ones-complement of the CRC-16. 
+  
 Third:
   invert all the bits of Q[15:0] to produce the CRC-16.
   
