@@ -21,3 +21,8 @@ def Crc16(datain, size):
       else:
           crc16 = (crc16 << 1) & 0xffff
   return crc16 ^ 0xffff
+
+#test code
+#list = [1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1]
+#print(Crc5(list, len(list)))
+#print(Crc16(list, len(list)))
